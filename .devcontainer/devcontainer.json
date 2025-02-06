@@ -1,0 +1,19 @@
+{
+    "name": "Node.js 18 & TypeScript",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash"
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-vscode.vscode-typescript-next"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install"
+  }
+  
